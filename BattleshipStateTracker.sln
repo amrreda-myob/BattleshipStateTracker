@@ -10,6 +10,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{943FFC68-9
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BattleStateTracker.Unit.Tests", "test\BattleStateTracker.Unit.Tests\BattleStateTracker.Unit.Tests.csproj", "{72E91FFC-A37E-47B5-9B9E-F7AF4CA1DD9F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BattleStateTracker.Integration.Tests", "test\BattleStateTracker.Integration.Tests\BattleStateTracker.Integration.Tests.csproj", "{C741C192-1E90-4A6B-A194-E3D0FF895FED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,10 +30,15 @@ Global
 		{72E91FFC-A37E-47B5-9B9E-F7AF4CA1DD9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{72E91FFC-A37E-47B5-9B9E-F7AF4CA1DD9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{72E91FFC-A37E-47B5-9B9E-F7AF4CA1DD9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C741C192-1E90-4A6B-A194-E3D0FF895FED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C741C192-1E90-4A6B-A194-E3D0FF895FED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C741C192-1E90-4A6B-A194-E3D0FF895FED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C741C192-1E90-4A6B-A194-E3D0FF895FED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{C861D689-B059-4EBE-89A9-0197800F2143} = {90ECD1CB-EB5E-4710-9588-52F4C7BEA4B9}
 		{A60504EC-E139-4F42-818D-FD991D13C816} = {90ECD1CB-EB5E-4710-9588-52F4C7BEA4B9}
 		{72E91FFC-A37E-47B5-9B9E-F7AF4CA1DD9F} = {943FFC68-99D2-47B5-B4D3-A49FBF87AF83}
+		{C741C192-1E90-4A6B-A194-E3D0FF895FED} = {943FFC68-99D2-47B5-B4D3-A49FBF87AF83}
 	EndGlobalSection
 EndGlobal
