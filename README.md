@@ -1,5 +1,7 @@
 ## Battleship State Tracker
 
+[![Build Status](https://amrreda.visualstudio.com/BattleshipStateTracker/_apis/build/status/AmrReda.BattleshipStateTracker?branchName=master)](https://amrreda.visualstudio.com/BattleshipStateTracker/_build/latest?definitionId=1&branchName=master)
+
 ### Background
 Emulate the classic game "Battleship".
 - Two players
