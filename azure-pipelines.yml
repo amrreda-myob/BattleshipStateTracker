@@ -31,7 +31,6 @@ steps:
   inputs:
     command: 'publish'
     publishWebProjects: true
-    arguments: '$(System.DefaultWorkingDirectory)/**'
 
 - task: AzureRmWebAppDeployment@4
   inputs:
