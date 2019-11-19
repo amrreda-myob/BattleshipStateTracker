@@ -23,3 +23,4 @@ Implementation Details
  - Unit tests Completed ( xUnit and Moq )
  - Integration Tests ( Not Completed )
  - Azure Pipeline
+ - Postman collection provided.
