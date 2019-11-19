@@ -15,3 +15,11 @@ their battleships (if one occupies that position) or a “miss”
 - A battleship is sunk if it has been hit on all the squares it occupies
 - A player wins if all of their opponent’s battleships have been sunk. 
 
+
+
+Implementation Details
+ - ASP.NET Core 3.0 
+ - Serilog
+ - Unit tests Completed ( xUnit and Moq )
+ - Integration Tests ( Not Completed )
+ - Azure Pipeline
