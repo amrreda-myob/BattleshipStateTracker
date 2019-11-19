@@ -1,0 +1,165 @@
+{
+	"info": {
+		"_postman_id": "405d04d3-bd90-4029-8794-ce7dbcabbcd8",
+		"name": "BattleshipStateTracker",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Battle",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ac254311-247a-4387-b1c7-c1b309eee224",
+						"exec": [
+							"var jsonData = JSON.parse(responseBody);",
+							"postman.setEnvironmentVariable(\"battleId\", jsonData.id);",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"ShipLength\": 3,\n\t\"Dimension\" : 10,\n\t\"NoOfShips\" : 5\n}"
+				},
+				"url": {
+					"raw": "https://localhost:5001/battle/1eb73359-df78-4fe9-978e-89f561bf3c9a/sh9-",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"battle",
+						"1eb73359-df78-4fe9-978e-89f561bf3c9a",
+						"sh9-"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Battle Status",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ac254311-247a-4387-b1c7-c1b309eee224",
+						"exec": [
+							"var jsonData = JSON.parse(responseBody);",
+							"postman.setEnvironmentVariable(\"battleId\", jsonData.id);",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"ShipLength\": 3,\n\t\"Dimension\" : 10,\n\t\"NoOfShips\" : 5\n}"
+				},
+				"url": {
+					"raw": "https://localhost:5001/battle/1eb73359-df78-4fe9-978e-89f561bf3c9a/sh9-",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"battle",
+						"1eb73359-df78-4fe9-978e-89f561bf3c9a",
+						"sh9-"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Ship",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"column\": 1,\n\t\"row\": 1,\n\t\"direction\": \"horizontal\"\n}"
+				},
+				"url": {
+					"raw": "https://localhost:5001/battle/{{battleId}}/ship",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"battle",
+						"{{battleId}}",
+						"ship"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Attack",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"row\" : 0,\n\t\"column\" : 0\n}"
+				},
+				"url": {
+					"raw": "https://localhost:5001/battle/{{battleId}}/Attack",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"battle",
+						"{{battleId}}",
+						"Attack"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
