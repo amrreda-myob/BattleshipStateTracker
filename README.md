@@ -19,8 +19,6 @@ their battleships (if one occupies that position) or a “miss”
 
 Implementation Details
  - ASP.NET Core 3.0 
- - Serilog
- - Unit tests Completed ( xUnit and Moq )
- - Integration Tests ( Not Completed )
+ - Serilog 
  - Azure Pipeline
- - Postman collection provided.
+ - Postman collection.
